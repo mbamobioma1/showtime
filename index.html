@@ -1,112 +1,183 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>showtime</title>
-    <script src="https://kit.fontawesome.com/58b7424050.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    <div class="container">
-        <!--side starts-->
-        <div class="side">
-            <span class="closebtn">&times;</span>
-            <div class="logo">SHOWTIME</div>
-            <nav>
-                <span</i><a href="#"><i class="fa-solid fa-house-user"></i> Home</a></span>
-                <span><a href="#"><i class="fa-solid fa-film"></i> Movies</a></span>
-                <span><a href="#"><i class="fa-solid fa-circle-play"></i> series</a></span>
-                <span><a href="#"><i class="fa-solid fa-heart"></i> Favourite</a></span>
-            </nav>
-            <!--account starts-->
-            <div class="account-container">
-                <span class="account">Account</span>
-                <a href="#"><span> <i class="fa-solid fa-user"></i> </span>fidelis</a>
-                <a href="#"><span> <i class="fa-solid fa-user"></i> </span>fidex</a>
-            </div>
-            <!--end of account-->
-            <div class="logout-container">
-                <span class="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</span>
-            </div>
-            <!--logout ends-->
-        </div>
-        <!--end of side-->
-        <div class="main">
-            <!--hero section starts-->
-            <div class="hero">
-                <span class="openbtn">&equiv;</span>
-                <div class="navbar">
-                    <div class="search">
-                        <input type="search" name="search" id="search" placeholder="search...">
-                    </div>
-                    <div class="bell">
-                        <i class="fa-solid fa-bell"></i> <span class="notify">notification</span>
-                    </div>
-                    <div class="profile">
-                        <i class="fa-solid fa-user"></i> <span class="user">profile</span>
-                    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>showtime</title>
+   <script src="https://kit.fontawesome.com/58b7424050.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <!--side starts-->
+       <div class="side">
+           <span class="closebtn">&times;</span>
+           <div class="logo">SHOWTIME</div>
+           <nav>
+               <span</i><a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a></span>
+               <span><a href="movies.html"><i class="fa-solid fa-film"></i> Movies</a></span>
+               <span><a href="#"><i class="fa-solid fa-circle-play"></i> series</a></span>
+               <span><a href="#"><i class="fa-solid fa-heart love"></i> Favourite</a></span>
+           </nav>
+           <!--account starts-->
+           <div class="account-container">
+               <span class="account">Account</span>
+               <a href="#"><span> <i class="fa-solid fa-user"></i> </span>fidex</a>
+               <a href="#"><span> <i class="fa-solid fa-user"></i> </span>obioma</a>
+           </div>
+           <!--end of account-->
+           <div class="logout-container">
+               <span class="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</span>
+           </div>
+           <!--logout ends-->
+       </div>
+       <!--end of side-->
+       <div class="main">
+           <!--hero section starts-->
+           <div class="hero">
+               <span class="openbtn">&equiv;</span>
+           <div class="navbar">
+               <div class="search">
+                   <input type="search" name="search" id="search" placeholder="search...">
+               </div>
+               <div class="bell">
+                   <i class="fa-solid fa-bell"></i> <span class="notify">notification</span>
+               </div>
+               <div class="profile">
+                   <i class="fa-solid fa-user"></i> <span class="user">profile</span>
+               </div>
+           </div>
+            <!--navbar ends-->
+                <div class="about">
+                   <h1>SHOWTIME Movies</h1>
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui,
+                   doloremque dolor voluptatum quam perferendis sed. Ratione delectus,
+                    neque tempore harum dignissimos, iure incidunt natus itaque corrupti 
+                    facere labore nostrum dolorem.
                 </div>
-                 <!--navbar ends-->
-                 <div class="about">
-                    <h1>SHOWTIME Movies</h1>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui,
-                    doloremque dolor voluptatum quam perferendis sed. Ratione delectus,
-                     neque tempore harum dignissimos, iure incidunt natus itaque corrupti 
-                     facere labore nostrum dolorem.
-                 </div>
-            </div>
-            <!--hero ends-->
-            <div class="item"><h3>MOVIES</h3><p>See all</p></div>
-            <div class="movie-container">
+           </div>
+           <!--hero ends-->
+           <div class="item"><h3>MOVIES</h3><p><a href="movies.html">See all</a></p></div>
+           <div class="movie-container">
 
-                <div class="movie">
-                    <a href="#">
-                    <img src="images/extraction.jpeg">
-                    </a>
-                    <div class="desc">Extraction 2</div>
-                </div>
+               <div class="movie">
+                   <a href="#">
+                   <img src="images/red, white and royal blue.jpeg">
+                   </a>
+                   <div class="desc">
+                       <div class="title">
+                           <p class="name">Red, White & Royal Blue</p>
+                           <p class="year">2023</p>
+                       </div>
 
-                <div class="movie">
-                    <a href="#">
-                    <img src="images/margux.jpeg">
-                    </a>
-                    <div class="desc">Marguax</div>
-                </div>
+                       <div class="rating">
+                           <p class="love" title="Add to Favourite"><i class="fa-solid fa-heart"></i></p>
+                           <p><i class="fa-solid fa-star rate"></i> 7.2</p>
+                       </div>
+                   </div>
+                   <!--desc ends-->
+               </div>
 
-                <div class="movie">
-                    <a href="#">
-                    <img src="images/ghosted.jpeg">
-                    </a>
-                    <div class="desc">Ghosted</div>
-                </div>
+               <div class="movie">
+                   <a href="#">
+                   <img src="images/spiderman.jpeg">
+                   </a>
+                   <div class="desc">
 
-                <div class="movie">
-                    <a href="#">
-                    <img src="images/gangs.jpeg">
-                    </a>
-                    <div class="desc">Gangs of London</div>
-                </div>
+                       <div class="title">
+                           <p class="name">Spiderman:Across the Spider Verse</p>
+                           <p class="year">2023</p>
+                       </div>
 
-                <div class="movie">
-                    <a href="#">
-                    <img src="images/commedy.jpeg">
-                    </a>
-                    <div class="desc">Comedy</div>
-                </div>
+                       <div class="rating">
+                           <p class="love" title="Add to Favourite"><i class="fa-solid fa-heart"></i></p>
+                           <p><i class="fa-solid fa-star rate"></i> 8.8</p>
+                       </div>
+                   </div>
+                   <!--desc ends-->
+               </div>
 
-                <div class="movie">
-                    <a href="#">
-                    <img src="images/cartoon.jpeg">
-                    </a>
-                    <div class="desc">Monster in the dark</div>
-                </div>
-                
-            </div>
-            <!--end of movie-conainer-->
-        </div>
-        <!--end of main-->
-    </div>
-    <script src="app.js"></script>
- </body>
- </html>
+               <div class="movie">
+                   <div class="image-container">
+                   <img src="images/asteriod.jpeg">
+                   </div>
+                   <div class="desc">
+
+                       <div class="title">
+                           <p class="name">Asteriod City</p>
+                           <p class="year">2023</p>
+                       </div>
+
+                       <div class="rating">
+                           <p class="love" title="Add to Favourite"><i class="fa-solid fa-heart"></i></p>
+                           <p><i class="fa-solid fa-star rate"></i> 6.9</p>
+                       </div>
+                   </div>
+                   <!--desc ends-->
+               </div>
+
+               <div class="movie">
+                   <a href="#">
+                   <img src="images/transformers.jpeg">
+                   </a>
+                   <div class="desc">
+
+                       <div class="title">
+                           <p class="name">Transformers:Rise of the Beast</p>
+                           <p class="year">2023</p>
+                       </div>
+
+                       <div class="rating">
+                           <p class="love" title="Add to Favourite"><i class="fa-solid fa-heart"></i></p>
+                           <p><i class="fa-solid fa-star rate"></i> 6.1</p>
+                       </div>
+                   </div>
+                   <!--desc ends-->
+               </div>
+
+               <div class="movie">
+                   <a href="#">
+                   <img src="images/tyrone.jpeg">
+                   </a>
+                   <div class="desc">
+
+                       <div class="title">
+                           <p class="name">They Cloned Tyrone</p>
+                           <p class="year">2023</p>
+                       </div>
+
+                       <div class="rating">
+                           <p class="love" title="Add to Favourite"><i class="fa-solid fa-heart"></i></p>
+                           <p><i class="fa-solid fa-star rate"></i> 6.9</p>
+                       </div>
+                   </div>
+                   <!--desc ends-->
+               </div>
+
+               <div class="movie">
+                   <a href="#">
+                   <img src="images/litle women.jpeg">
+                   </a>
+                   <div class="desc">
+
+                       <div class="title">
+                           <p class="name">Little Women</p>
+                           <p class="year">2019</p>
+                       </div>
+
+                       <div class="rating">
+                           <p class="love" title="Add to Favourite"><i class="fa-solid fa-heart"></i></p>
+                           <p><i class="fa-solid fa-star rate"></i> 7.8</p>
+                       </div>
+                   </div>
+                   <!--desc ends-->
+               </div>
+               
+           </div>
+           <!--end of movie-conainer-->
+       </div>
+       <!--end of main-->
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>

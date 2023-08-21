@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>showtime Movies</title>
+   <script src="https://kit.fontawesome.com/58b7424050.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <!--side starts-->
+       <div class="side">
+           <span class="closebtn">&times;</span>
+           <div class="logo">SHOWTIME</div>
+           <nav>
+               <span</i><a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a></span>
+               <span><a href="#"><i class="fa-solid fa-film"></i> Movies</a></span>
+               <span><a href="#"><i class="fa-solid fa-circle-play"></i> series</a></span>
+               <span><a href="#"><i class="fa-solid fa-heart love"></i> Favourite</a></span>
+           </nav>
+           <!--account starts-->
+           <div class="account-container">
+               <span class="account">Account</span>
+               <a href="#"><span> <i class="fa-solid fa-user"></i> </span>fidelis</a>
+               <a href="#"><span> <i class="fa-solid fa-user"></i> </span>fidex</a>
+           </div>
+           <!--end of account-->
+           <div class="logout-container">
+               <span class="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</span>
+           </div>
+           <!--logout ends-->
+       </div>
+       <!--end of side-->
+       <div class="main">
+        <span class="openbtn">&equiv;</span>
+          <!--navbar starts-->
+        <div class="navbar">
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="search...">
+            </div>
+            <div class="bell">
+                <i class="fa-solid fa-bell"></i> <span class="notify">notification</span>
+            </div>
+            <div class="profile">
+                <i class="fa-solid fa-user"></i> <span class="user">profile</span>
+            </div>
+        </div>
+          <!--navbar ends-->
+          <!--buttons-->
+          <div class="buttons">
+            <button type="button" class="btn" data-id="all">All</button>
+            <button type="button" class="btn" data-id="Romance">Romance</button>
+            <button type="button" class="btn" data-id="Action">Action</button>
+            <button type="button" class="btn" data-id="Comedy">Comedy</button>
+          </div>
+          <!--buttons ends-->
+          <div class="section-center">
+            
+                <div class="movie-category">
+                    <a href="#">
+                    <img src="images/extraction.jpeg" alt="photo">
+                    </a>
+                    <div class="desc">
+
+                        <div class="title">
+                            <p class="name">Extraction2</p>
+                            <p class="year">2023</p>
+                        </div>
+
+                        <div class="rating">
+                            <p class="love" title="Add to Favourite"><i class="fa-solid fa-heart"></i></p>
+                            <p><i class="fa-solid fa-star rate"></i> 9.0</p>
+                        </div>
+                    </div>
+                    <!--desc ends-->
+                </div>
+
+          </div>
+          <!--section center ends-->
+       </div>
+       <!--end of main-->
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>

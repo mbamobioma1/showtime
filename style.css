@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
 }
 .container{
     display: flex;
@@ -13,9 +12,10 @@ body{
     overflow: hidden;
     padding: 10px;
     position: fixed;
-    background-color: black;
+    border-right: 1px solid #ccc;
     transition: 0.5s;
-    color: white;
+    color: grey;
+    min-height: 100%;
 }
 .side a{
     display: block;
@@ -23,27 +23,30 @@ body{
     font-size: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: grey;
+    color: #29293d;
 }
 .closebtn{
     font-size: 30px;
-    color: white;
+    color: red;
     position: absolute;
     right: 5px;
     top: 0;
     display: none;
+    cursor: pointer;
 }
 .openbtn{
-    font-size: 30px;
+    font-size: 25px;
     display: none;
     float: left;
-    margin-top: 10px;
+    margin-top: 14px;
+    color: gray;
+    cursor: pointer;
 }
 .logo{
     margin: 30px;
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 .side nav{
     margin: 10px 30px;
@@ -57,7 +60,7 @@ body{
 .account{
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 .logout-container{
     margin-top: 30px;
@@ -68,18 +71,18 @@ body{
 .main{
     width: 80%;
     margin-left: 22%;
-    background-color: black;
+    /*background-color: #e6e6fa;*/
 }
 /*hero section*/
 .hero{
     width: 100%;
-    height: 500px;
+    height: 450px;
     background-color: black;
-    background-image: url(images/family.webp);
+    background-image: url(images/350d58a3813b36d71e1e632ba22a5f60.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 1;
     color: white;
+    filter: brightness(50%);
 }
 .navbar{
     display: flex;
@@ -92,7 +95,7 @@ body{
 }
 .search input{
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid  gray;
     outline: none;
     color: #222;
     font-size: 15px;
@@ -115,26 +118,34 @@ body{
 }
 /*movie section*/
 .movie-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
 }
-.movie{
-    width: 200px;
-    margin: 5px;
-    flex: 1;
-}
-
 .movie img{
     width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
 }
-.desc{
-    color: white;
+.name{
+    color: black;
 }
 .item{
     display: flex;
     justify-content: space-between;
-    color: #ccc;
+    color: black;
     padding: 10px;
+}
+.item a{
+    color: black;
+    text-decoration: none;
+}
+.love{
+    color: palevioletred;
+}
+.rate{
+    color: yellow;
 }
 /*screen size eqaul or less than 768px*/
 @media only screen and (max-width:768px) {
@@ -146,7 +157,9 @@ body{
     .showside{
         width: 50%;
         padding: 10px;
-        background-color: black;
+        z-index: 2;
+        background-color: white;
+        /*background-color: #e6e6fa;*/
     }
     .closebtn{
         display: block;
@@ -168,8 +181,49 @@ body{
     .user{
         display: none;
     }
-    .movie{
-        flex: auto;
-    }
-
 }
+
+/*movies page*/
+.buttons{
+    display: flex;
+}
+.buttons button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+}
+.buttons button:hover{
+    text-decoration: underline;
+}
+.section-center{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+}
+.movie-category img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*screen size eqaul or less than 468px*/
+@media screen and (min-width:468px) {
+    .section-center{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .movie-container{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
