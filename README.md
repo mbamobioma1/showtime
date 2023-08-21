@@ -1,1 +1,3 @@
-# showtime
+# SHOWTIME
+
+## About SHOWTIME
