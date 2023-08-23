@@ -3,7 +3,7 @@ const openBtn = document.querySelector(".openbtn");
 const closeBtn = document.querySelector(".closebtn");
 
 openBtn.addEventListener("click", function(){
-    side.classList.add("showside");
+    side.classList.toggle("showside");
 })
 
 closeBtn.addEventListener("click", function(){
