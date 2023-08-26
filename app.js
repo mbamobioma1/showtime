@@ -1,3 +1,4 @@
+// side bar
 const side = document.querySelector(".side");
 const openBtn = document.querySelector(".openbtn");
 const closeBtn = document.querySelector(".closebtn");
@@ -9,6 +10,19 @@ openBtn.addEventListener("click", function(){
 closeBtn.addEventListener("click", function(){
     side.classList.remove("showside");
 })
+//add fixedbar to navbar onscroll
+const navbar = document.querySelector(".navbar");
+window.addEventListener("scroll", function(){
+    const navHeight = navbar.getBoundingClientRect().height;
+    const scrollHeight = window.pageYOffset;
+    if(scrollHeight > navHeight){
+        navbar.classList.add("fixedNav");
+    }else{
+        navbar.classList.remove("fixedNav");
+    }
+})
+
+
 //movie page
 const movie = [ 
     {
